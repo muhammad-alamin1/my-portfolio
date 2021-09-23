@@ -1,0 +1,70 @@
+#contact{
+    background-color: #112240;
+    padding:60px;
+}
+#contact-me{
+    background-color:#0a192f ;
+    padding:30px;
+}
+#contact p{
+    color:#fff;
+}
+#contact h2{
+    color:#0578FF;
+    margin-bottom: 30px;
+}
+#contact input:required, textarea:required{
+    background-color:#0a192f ;
+}
+#contact input:focus{
+    background-color:#fff ;
+}
+#form-btn{
+    background-color: #112240;
+    border:1px solid #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    color:#ffffff;
+}
+
+#form-btn:focus{
+    color:#000;
+}
+#map{
+    margin-top: 20px;
+    
+}
+
+
+/* ############ Responsive Design ############# */
+@media only screen and (max-width: 992px)  {
+    #map{
+        display:none;
+        
+    }
+}
+@media only screen and (max-width: 440px)  {
+    #contact{
+        background-color: #112240;
+        padding:20px;
+    }
+    #contact-me{
+        background-color: #112240;
+        padding:0px;
+    }
+    #contact p{
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 330px)  {
+    #contact{
+        padding:0px;
+    }
+    #contact-me{
+        padding:0px;
+    }
+    
+}
+
+

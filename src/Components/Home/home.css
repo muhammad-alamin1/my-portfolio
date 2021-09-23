@@ -1,0 +1,104 @@
+#home-section{
+    background-color: #112240;
+    
+}
+
+.home-left-side, .home-right-side{
+    margin: 6rem 0;
+    color: #fff;
+}
+.home-right-side img{
+    width: 520px;
+    transform: rotate(-12deg)
+}
+
+.home-left-side img{
+    border-radius: 10px;
+}
+
+.about-btn{
+    margin-top: 100px;
+}
+
+.home-left-side .btn, .home-page-skill .btn, .home-page-project .btn{
+    border:1px solid #fff;
+    margin-right: 15px;
+}
+.home-left-side .btn:hover, .home-page-skill .btn:hover, .home-page-project .btn:hover{
+    background-color: #6c757d;
+}
+.home-left-side .btn a:hover, .home-page-skill .btn a:hover, .home-page-project .btn a:hover{
+    color:#fff;
+}
+.home-page-skill{
+    background-color: #0a192f;
+    height: 443px;
+
+}
+.home-page-project{
+    background-color: #112240;
+    height: 500px;
+}
+.home-page-skill h2, .home-page-project h2{
+    color:#0578FF;
+    padding: 50px 0;
+}
+
+
+/* ################### Responsive Design ################# */
+@media only screen and (max-width: 1125px)  {
+    .home-right-side img{
+        width: 450px;
+        transform: rotate(-8deg)
+    }
+  }
+
+@media only screen and (max-width: 992px)  {
+    .home-right-side img{
+        width: 400px;
+        height: 300px;
+        transform: rotate(-5deg)
+        
+    }
+    .home-page-project{
+        height: 815px;
+    }
+  }
+  @media only screen and (max-width: 850px)  {
+    .home-right-side img{
+        display:none;        
+    }
+    .home-left-side {
+        text-align: center ;
+    }
+    
+  }
+  @media only screen and (max-width: 767px)  {
+    .home-left-side, .home-right-side{
+        margin: 2rem 0;
+        
+    }
+    .home-page-project{
+        height: 850px;
+    }
+  }
+  @media only screen and (max-width: 600px)  {
+    .home-page-project{
+        height: 1370px;
+    }
+    
+  }
+  @media only screen and (max-width: 320px)  {
+    .home-left-side, .home-right-side{
+        margin: 1rem 0;
+        
+    }
+    .home-left-side .btn{
+        margin-bottom: 10px;
+    }
+    .about-btn{
+        margin: 30px ;
+    }
+    
+  }
+ 

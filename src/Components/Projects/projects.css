@@ -1,0 +1,24 @@
+#project{
+    background-color: #112240;
+    padding:60px;
+    
+}
+#my-projects{
+    background-color:#0a192f ;
+    padding:30px;
+    
+}
+
+/* ############ Responsive Design ############# */
+@media only screen and (max-width: 450px)  {
+    #project{
+        background-color:#0a192f ;
+        padding:20px;
+        
+    }
+    #my-projects{
+        padding:0px;
+        
+    }
+    
+  }
