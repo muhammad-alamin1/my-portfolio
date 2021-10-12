@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function ProjectCard(props) {
     // console.log(props)
-    const { projectName, projectDescription, img, github, live } = props.project;
+    const { projectName, projectDescription, img, clientGithub,  serverGithub, live } = props.project;
     return (
         <div className="" id="card-container">
             <div className="box ">
@@ -13,8 +13,9 @@ export default function ProjectCard(props) {
                     <span id="card-description" className="post">{projectDescription}</span>
                 </div>
                 <ul class="icon">
-                    <li><a href={github} target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href={live} target="_blank"><i className="fas fa-link"></i></a></li>
+                    <li><a href={clientGithub} target="_blank" title="Client Github Repo"><i class="fab fa-github"></i></a></li>
+                    <li><a href={serverGithub} target="_blank" title="Server Github Repo"><i class="fab fa-github"></i></a></li>
+                    <li><a href={live} target="_blank" title="Live"><i className="fas fa-link"></i></a></li>
                 </ul>
             </div>
         </div>

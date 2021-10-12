@@ -6,10 +6,12 @@ import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
 import C_prog from '../../img/C_programming.png';
 import javaScript from '../../img/javaScript.png';
-import es6 from '../../img/es6.png';
 import react from '../../img/react.png';
 import SkillCard from '../SkillCard/SkillCard';
 import node from '../../img/node_js.png';
+import doctor from '../../img/doctor.png';
+import bookShop from '../../img/bookShop.png';
+import Amazon from '../../img/Amazon.png';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 // Skill 
@@ -42,29 +44,41 @@ const skillImg = [
 const projects = [
     {
         id: 1,
-        projectName: 'doctor-portal',
-        projectDescription: 'lorem ipsum dolar lorem ipsum dolar ',
-        img: node,
+        projectName: 'Doctor Portal',
+        projectDescription: 'The application has been created for online based healthcare.',
+        img: doctor,
+        clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
+        live: ''
     },
     {
         id: 2,
-        projectName: 'Appoints',
-        projectDescription: 'lorem ipsum dolar lorem ipsum dolar ',
-        img: react,
+        projectName: 'Amazon Online Shop',
+        projectDescription: 'Amazon Online Shopping.',
+        img: Amazon,
+        clientGithub: 'https://github.com/muhammad-alamin1/amazon-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/amazon-server',
+        live: 'https://amajon-8a23a.firebaseapp.com/'
     },
     {
         id: 3,
-        projectName: 'Programming',
-        projectDescription: 'lorem ipsum dolar lorem ipsum dolar',
-        img: es6,
+        projectName: 'Book Shop',
+        projectDescription: 'The application has been created for online book shop.',
+        img: bookShop,
+        clientGithub: 'https://github.com/muhammad-alamin1/book-shop-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/book-shop-server',
+        live: 'https://book-shop-28a9a.web.app/'
     },
     {
         id: 4,
-        projectName: 'Transfer-market',
-        projectDescription: 'lorem ipsum dolar lorem ipsum dolar ',
-        img: C_prog,
+        projectName: 'Doctor Portal',
+        projectDescription: 'The application has been created for online based healthcare.',
+        img: doctor,
+        clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
+        live: 'https://doctor-portal01.netlify.app/'
     },
-    
+
 ]
 
 export default function Home() {
@@ -109,7 +123,7 @@ export default function Home() {
                             skillImg.map((skill) => <SkillCard key={skill.id} skill={skill} />)
                         }
                     </div>
-                    <button className="btn"  style={{marginTop:'48px'}}><Link to="/about">See More</Link></button>
+                    <button className="btn" style={{ marginTop: '48px' }}><Link to="/about">See More</Link></button>
                 </div>
             </div>
             <div className="home-page-project text-center">
@@ -117,10 +131,10 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         {
-                             projects.map((project) =><ProjectCard key={project.id} project={project}/>)
+                            projects.map((project) => <ProjectCard key={project.id} project={project} />)
                         }
                     </div>
-                    <button className="btn" style={{marginTop:'48px'}}><Link to="/projects">See More</Link></button>
+                    <button className="btn" style={{ marginTop: '48px' }}><Link to="/projects">See More</Link></button>
                 </div>
             </div>
         </div>
