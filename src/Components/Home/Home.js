@@ -44,7 +44,7 @@ const skillImg = [
 const projects = [
     {
         id: 1,
-        projectName: 'Doctor Portal',
+        projectName: 'Doctor ',
         projectDescription: 'The application has been created for online based healthcare.',
         img: doctor,
         clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
