@@ -1,5 +1,6 @@
 import './home.css';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { Document, Page } from 'react-pdf';
 import muhammad from '../../img/muhammad.jpg';
 import cover from '../../img/cover.jpg';
 import Typed from 'typed.js';
@@ -13,6 +14,7 @@ import doctor from '../../img/doctor.png';
 import bookShop from '../../img/bookShop.png';
 import Amazon from '../../img/Amazon.png';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import Burj from '../../img/burj.png';
 
 // Skill 
 const skillImg = [
@@ -44,15 +46,6 @@ const skillImg = [
 const projects = [
     {
         id: 1,
-        projectName: 'Doctor ',
-        projectDescription: 'The application has been created for online based healthcare.',
-        img: doctor,
-        clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
-        live: ''
-    },
-    {
-        id: 2,
         projectName: 'Amazon Online Shop',
         projectDescription: 'Amazon Online Shopping.',
         img: Amazon,
@@ -61,7 +54,7 @@ const projects = [
         live: 'https://amajon-8a23a.firebaseapp.com/'
     },
     {
-        id: 3,
+        id: 2,
         projectName: 'Book Shop',
         projectDescription: 'The application has been created for online book shop.',
         img: bookShop,
@@ -70,13 +63,22 @@ const projects = [
         live: 'https://book-shop-28a9a.web.app/'
     },
     {
-        id: 4,
+        id: 3,
         projectName: 'Doctor Portal',
         projectDescription: 'The application has been created for online based healthcare.',
         img: doctor,
         clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
         serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
         live: 'https://doctor-portal01.netlify.app/'
+    },
+    {
+        id: 4,
+        projectName: 'Burj Al Arab',
+        projectDescription: 'This application has been created for online room booking.',
+        img: Burj,
+        clientGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-server',
+        live: 'https://burj-al-khalifa-21526.firebaseapp.com/'
     },
 
 ]
@@ -96,6 +98,7 @@ export default function Home() {
             typed.destroy();
         };
     }, []);
+
     return (
         <div className="top" id="home-section">
             <section className="container">
@@ -107,7 +110,8 @@ export default function Home() {
                         <h4 className="type-ani"><strong ref={typeTarget}></strong></h4>
                         <div className="about-btn">
                             <button className="btn"><Link to="/about">About Me</Link></button>
-                            <button className="btn"><Link to="/contact">Download Resume</Link></button>
+                            <button className="btn">
+                                <a href="https://drive.google.com/file/d/1hn_DSMk2QgemtdrkhkrcPcmEbYXjLLLB/view?usp=sharing" target="_blank">Download Resume</a></button>
                         </div>
                     </div>
                     <div className="col-sm-0 col-md-6 home-right-side">

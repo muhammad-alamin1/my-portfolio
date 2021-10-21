@@ -11,21 +11,13 @@ import doctor from '../../img/doctor.png';
 import ProjectCard from './../ProjectCard/ProjectCard';
 import bookShop from '../../img/bookShop.png';
 import Amazon from '../../img/Amazon.png';
+import Burj from '../../img/burj.png';
 
 
 // project
 const projects = [
     {
         id: 1,
-        projectName: 'doctor-portal',
-        projectDescription: 'lorem ipsum dolar lorem ipsum dolar ',
-        img: node,
-        clientGithub: '',
-        serverGithub: '',
-        live: ''
-    },
-    {
-        id: 2,
         projectName: 'Amazon Online Shop',
         projectDescription: 'Amazon Online Shopping.',
         img: Amazon,
@@ -34,7 +26,7 @@ const projects = [
         live: 'https://amajon-8a23a.firebaseapp.com/'
     },
     {
-        id: 3,
+        id: 2,
         projectName: 'Book Shop',
         projectDescription: 'The application has been created for online book shop.',
         img: bookShop,
@@ -43,13 +35,22 @@ const projects = [
         live: 'https://book-shop-28a9a.web.app/'
     },
     {
-        id: 4,
+        id: 3,
         projectName: 'Doctor Portal',
         projectDescription: 'The application has been created for online based healthcare.',
         img: doctor,
         clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
         serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
         live: 'https://doctor-portal01.netlify.app/'
+    },
+    {
+        id: 4,
+        projectName: 'Burj Al Arab',
+        projectDescription: 'This application has been created for online room booking.',
+        img: Burj,
+        clientGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-server',
+        live: 'https://burj-al-khalifa-21526.firebaseapp.com/'
     },
     {
         id: 5,
