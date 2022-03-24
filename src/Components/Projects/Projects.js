@@ -1,38 +1,37 @@
-import './projects.css';
 import React from 'react';
-import node from '../../img/node_js.png';
-import pioneer from '../../img/pioneer-bank.png';
-import leaugeDetails from '../../img/leauge-details.png';
-import hard from '../../img/hard-rock.png';
-import team from '../../img/team.png';
-import weather from '../../img/weather.png';
-import transfer from '../../img/trnasfer.png';
-import doctor from '../../img/doctor.png';
-import ProjectCard from './../ProjectCard/ProjectCard';
-import bookShop from '../../img/bookShop.png';
-import Amazon from '../../img/Amazon.png';
+import blogApp from '../../img/blog-app.png';
 import Burj from '../../img/burj.png';
+import doctor from '../../img/doctor.png';
+import hard from '../../img/hard-rock.png';
+import leaugeDetails from '../../img/leauge-details.png';
+import pioneer from '../../img/pioneer-bank.png';
+import quizApp from '../../img/quiz-app.png';
+import team from '../../img/team.png';
+import transfer from '../../img/trnasfer.png';
+import weather from '../../img/weather.png';
+import ProjectCard from './../ProjectCard/ProjectCard';
+import './projects.css';
 
 
 // project
 const projects = [
     {
         id: 1,
-        projectName: 'Amazon Online Shop',
-        projectDescription: 'Amazon Online Shopping.',
-        img: Amazon,
-        clientGithub: 'https://github.com/muhammad-alamin1/amazon-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/amazon-server',
-        live: 'https://amajon-8a23a.firebaseapp.com/'
+        projectName: 'Node.js Blog Application',
+        projectDescription: 'A blog application, with multiple user & user dashboard.',
+        img: blogApp,
+        clientGithub: 'https://github.com/muhammad-alamin1/blog-application',
+        serverGithub: 'https://github.com/muhammad-alamin1/blog-application',
+        live: 'https://blog-application01.herokuapp.com/'
     },
     {
         id: 2,
-        projectName: 'Book Shop',
-        projectDescription: 'The application has been created for online book shop.',
-        img: bookShop,
-        clientGithub: 'https://github.com/muhammad-alamin1/book-shop-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/book-shop-server',
-        live: 'https://book-shop-28a9a.web.app/'
+        projectName: 'Quiz Application',
+        projectDescription: 'Online programming quiz application.',
+        img: quizApp,
+        clientGithub: 'https://github.com/muhammad-alamin1/quiz-app',
+        serverGithub: 'https://github.com/muhammad-alamin1/quiz-app',
+        live: 'https://programming-quiz-app2303.netlify.app/'
     },
     {
         id: 3,

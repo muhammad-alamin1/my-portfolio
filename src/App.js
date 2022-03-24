@@ -1,18 +1,15 @@
+import {
+  BrowserRouter as Router, Route, Switch
+} from "react-router-dom";
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Components/Home/Home';
 import About from './Components/About/About';
-import NotFound from './Components/NotFound/NotFound';
-import Footer from './Components/Footer/Footer';
-import Projects from './Components/Projects/Projects';
 import Blogs from './Components/Blogs/Blogs';
 import Contact from './Components/Contact/Contact';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Footer from './Components/Footer/Footer';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
+import NotFound from './Components/NotFound/NotFound';
+import Projects from './Components/Projects/Projects';
 
 
 function App() {
@@ -20,7 +17,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/about">
+        <Route path="/about/">
           <About />
         </Route>
         <Route path="/projects">

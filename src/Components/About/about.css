@@ -1,68 +1,67 @@
-#about-section{
-    background-color: #112240;
-    padding: 60px;
-
+#about-section {
+  background-color: #112240;
+  padding: 60px;
 }
-.about-right-side h2, #skill-section h2{
-    color:#0578FF;
+.about-right-side h2,
+#skill-section h2 {
+  color: #0578ff;
 }
-#skill-section, .about-section{
-    background-color:#0a192f;
-    padding:30px;
+#skill-section,
+.about-section {
+  background-color: #0a192f;
+  padding: 30px;
 }
-.about-me{
-    display: flex;
-    margin-top: 30px;
+.about-me {
+  display: flex;
+  margin-top: 30px;
 }
-.about-me .img{
-    margin-right: 10px;
+.about-me .img {
+  margin-right: 10px;
 }
-#skill-section{
-    margin-top: 40px;
-    
+.img img {
+  border-radius: 10px;
 }
-
+#skill-section {
+  margin-top: 40px;
+}
 
 /* ############# Responsive Design ############# */
-@media only screen and (max-width: 1240px)  {
-    .about-me{
-        display: block;
-    }
-    .about-me .img{
-        margin-bottom: 20px;
-    }
-    
+@media only screen and (max-width: 1240px) {
+  .about-me {
+    display: block;
   }
-  @media only screen and (max-width: 800px)  {
-    .about-right-side p, .about-left-side p{
-        font-size: 1rem;
-    }
-    
+  .about-me .img {
+    margin-bottom: 20px;
   }
-  @media only screen and (max-width: 500px)  {
-    #card-container1{
-        width:50%;
-        
-    }
-    #about-section{
-        padding-left: 15px;
-    
-    }
-    #skill-section, .about-section{
-        background-color: #112240;
-        padding:0;
-    }
-    .about-right-side p, .about-left-side p{
-        font-size: .9rem;
-    }
-    .about-right-side{
-        text-align: justify;
-    }
-    
+}
+@media only screen and (max-width: 800px) {
+  .about-right-side p,
+  .about-left-side p {
+    font-size: 1rem;
   }
-  @media only screen and (max-width: 390px)  {
-    #card-container1{
-        width:100%;
-    }
-    
+}
+@media only screen and (max-width: 500px) {
+  #card-container1 {
+    width: 50%;
   }
+  #about-section {
+    padding-left: 15px;
+  }
+  #skill-section,
+  .about-section {
+    background-color: #112240;
+    padding: 0;
+  }
+  .about-right-side p,
+  .about-left-side p {
+    font-size: 0.9rem;
+  }
+  .about-right-side {
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #card-container1 {
+    width: 100%;
+  }
+}

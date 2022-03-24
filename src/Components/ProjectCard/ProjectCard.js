@@ -1,12 +1,12 @@
-import './projectCard.css';
 import React from 'react';
+import './projectCard.css';
 
 export default function ProjectCard(props) {
-    // console.log(props)
-    const { projectName, projectDescription, img, clientGithub,  serverGithub, live } = props.project;
+    const { projectName, projectDescription, img, clientGithub, serverGithub, live } = props.project;
+
     return (
         <div className="" id="card-container">
-            <div className="box ">
+            <div className="box">
                 <img src={img} alt="img" className="img-fluid" />
                 <div className="box-content">
                     <h3 id="card-title" className="title">{projectName}</h3>

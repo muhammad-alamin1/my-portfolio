@@ -1,7 +1,7 @@
-import './footer.css';
-import React, { useRef, useEffect } from 'react';
-import Typed from 'typed.js';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import Typed from 'typed.js';
+import './footer.css';
 
 export default function Footer() {
     const year = new Date();
@@ -19,6 +19,7 @@ export default function Footer() {
             typed.destroy();
         };
     }, []);
+
     return (
         <div id="footer">
             <div className="container">
@@ -45,16 +46,16 @@ export default function Footer() {
                     </div>
                     <div className="col-md-4 footer" >
 
-                    </div >
+                    </div>
                     <div className="col-md-4 footer" id="develop">
                         <h4> Developed by <strong ref={typeTarget} style={{ fontStyle: 'italic' }} ></strong></h4>
                         <h4>< i class="fas fa-map-marker-alt"></i> Barisal, Bangladesh</h4>
-                        <a class="scroll-link top-link" href="#home-section"><i class="fas fa-arrow-up" title="Root"> </i></a>
+                        <Link to="/" class="scroll-link top-link"><i class="fas fa-arrow-up" title="Root"> </i></Link>
                     </div>
                 </div>
                 <br />
                 <br />
-                <h4 id="copy"> & copy; {year.getFullYear()}Muhammad.All Rights Reserved </h4>
+                <h4 id="copy"> &copy; {year.getFullYear()} Muhammad All Rights Reserved </h4>
             </div>
         </div>
     )

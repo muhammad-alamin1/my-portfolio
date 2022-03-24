@@ -1,84 +1,81 @@
-import './home.css';
-import React, { useRef, useEffect, useState } from 'react';
-import { Document, Page } from 'react-pdf';
-import muhammad from '../../img/muhammad.jpg';
-import cover from '../../img/cover.jpg';
-import Typed from 'typed.js';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import C_prog from '../../img/C_programming.png';
-import javaScript from '../../img/javaScript.png';
-import react from '../../img/react.png';
-import SkillCard from '../SkillCard/SkillCard';
+import Typed from 'typed.js';
+import cover from '../../img/bg.jpg';
+import blogApp from '../../img/blog-app.png';
+import C_prog from '../../img/c.jpeg';
+import lifeCare from '../../img/life-care.png';
+import muhammad from '../../img/muhammad.jpeg';
 import node from '../../img/node_js.png';
-import doctor from '../../img/doctor.png';
-import bookShop from '../../img/bookShop.png';
-import Amazon from '../../img/Amazon.png';
+import python from '../../img/python.jpeg';
+import quizApp from '../../img/quiz-app.png';
+import react from '../../img/react.png';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import Burj from '../../img/burj.png';
+import SkillCard from '../SkillCard/SkillCard';
+import './home.css';
 
 // Skill 
 const skillImg = [
     {
         id: 1,
-        img: C_prog,
-        title: 'C-Programming',
+        img: node,
+        title: 'Node JS',
     },
     {
         id: 2,
-        img: javaScript,
-        title: 'JavaScript',
-    },
-    {
-        id: 3,
         img: react,
         title: 'React JS',
 
     },
     {
+        id: 3,
+        img: C_prog,
+        title: 'C-Programming',
+    },
+    {
         id: 4,
-        img: node,
-        title: 'Node JS',
+        img: python,
+        title: 'Python',
     },
 ]
-
 
 // project
 const projects = [
     {
         id: 1,
-        projectName: 'Amazon Online Shop',
-        projectDescription: 'Amazon Online Shopping.',
-        img: Amazon,
-        clientGithub: 'https://github.com/muhammad-alamin1/amazon-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/amazon-server',
-        live: 'https://amajon-8a23a.firebaseapp.com/'
+        projectName: 'Node.js Blog Application',
+        projectDescription: 'A blog application, with multiple user & user dashboard.',
+        img: blogApp,
+        clientGithub: 'https://github.com/muhammad-alamin1/blog-application',
+        serverGithub: 'https://github.com/muhammad-alamin1/blog-application',
+        live: 'https://blog-application01.herokuapp.com/'
     },
     {
         id: 2,
-        projectName: 'Book Shop',
-        projectDescription: 'The application has been created for online book shop.',
-        img: bookShop,
-        clientGithub: 'https://github.com/muhammad-alamin1/book-shop-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/book-shop-server',
-        live: 'https://book-shop-28a9a.web.app/'
+        projectName: 'Quiz Application',
+        projectDescription: 'Online programming quiz application.',
+        img: quizApp,
+        clientGithub: 'https://github.com/muhammad-alamin1/quiz-app',
+        serverGithub: 'https://github.com/muhammad-alamin1/quiz-app',
+        live: 'https://programming-quiz-app2303.netlify.app/'
     },
     {
         id: 3,
-        projectName: 'Doctor Portal',
+        projectName: 'Life Care',
         projectDescription: 'The application has been created for online based healthcare.',
-        img: doctor,
-        clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
-        live: 'https://doctor-portal01.netlify.app/'
+        img: lifeCare,
+        clientGithub: 'https://github.com/muhammad-alamin1/life-care-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/life-care-server',
+        live: 'https://ephemeral-pegasus-8edf7b.netlify.app/'
     },
     {
         id: 4,
-        projectName: 'Burj Al Arab',
-        projectDescription: 'This application has been created for online room booking.',
-        img: Burj,
-        clientGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-client',
-        serverGithub: 'https://github.com/muhammad-alamin1/burj-al-khalifa-server',
-        live: 'https://burj-al-khalifa-21526.firebaseapp.com/'
+        projectName: '',
+        projectDescription: '',
+        img: '',
+        clientGithub: '',
+        serverGithub: '',
+        live: ''
     },
 
 ]
@@ -88,7 +85,7 @@ export default function Home() {
 
     useEffect(() => {
         const typed = new Typed(typeTarget.current, {
-            strings: ["A MERN Stack Web Developer.", "An interactive Front-end Web Developer."],
+            strings: ["Node.js Developer", "React Developer"],
             typeSpeed: 70,
             backSpeed: 50,
             loop: Infinity,
@@ -104,8 +101,8 @@ export default function Home() {
             <section className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-6 home-left-side text-center ">
-                        <img src={muhammad} alt="muhammad" className="" />
-                        <h4 className="my-3">Hello, I'm </h4>
+                        <img src={muhammad} alt="muhammad" className="img-fluid" />
+                        <h4 className="my-3">Hi, there! ⚡ I'm</h4>
                         <h2>muhammad</h2>
                         <h4 className="type-ani"><strong ref={typeTarget}></strong></h4>
                         <div className="about-btn">
@@ -115,7 +112,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="col-sm-0 col-md-6 home-right-side">
-                        <img src={cover} alt="cover" />
+                        <img src={cover} alt="cover" className="img-fluid" />
                     </div>
                 </div>
             </section>
@@ -127,7 +124,7 @@ export default function Home() {
                             skillImg.map((skill) => <SkillCard key={skill.id} skill={skill} />)
                         }
                     </div>
-                    <button className="btn" style={{ marginTop: '48px' }}><Link to="/about">See More</Link></button>
+                    <button className="btn" style={{ marginTop: '40px' }}><Link to="/about">See More</Link></button>
                 </div>
             </div>
             <div className="home-page-project text-center">
@@ -138,7 +135,7 @@ export default function Home() {
                             projects.map((project) => <ProjectCard key={project.id} project={project} />)
                         }
                     </div>
-                    <button className="btn" style={{ marginTop: '48px' }}><Link to="/projects">See More</Link></button>
+                    <button className="btn" style={{ marginTop: '40px' }}><Link to="/projects">See More</Link></button>
                 </div>
             </div>
         </div>

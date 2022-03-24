@@ -160,6 +160,7 @@ nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -173,9 +174,9 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
-  border:none;
+  border: none;
 }
-.nav-toggle:focus{
+.nav-toggle:focus {
   outline: none;
   box-shadow: none;
 }
@@ -223,6 +224,6 @@ nav {
 }
 
 /* ################### Responsive Design ################# */
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
   /* No problems */
 }
