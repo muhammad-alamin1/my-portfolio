@@ -66,17 +66,9 @@ const projects = [
         img: lifeCare,
         clientGithub: 'https://github.com/muhammad-alamin1/life-care-client',
         serverGithub: 'https://github.com/muhammad-alamin1/life-care-server',
-        live: 'https://ephemeral-pegasus-8edf7b.netlify.app/'
+        live: 'https://dynamic-alpaca-3d47d4.netlify.app/'
     },
-    {
-        id: 4,
-        projectName: '',
-        projectDescription: '',
-        img: '',
-        clientGithub: '',
-        serverGithub: '',
-        live: ''
-    },
+
 
 ]
 
@@ -124,7 +116,7 @@ export default function Home() {
                             skillImg.map((skill) => <SkillCard key={skill.id} skill={skill} />)
                         }
                     </div>
-                    <button className="btn" style={{ marginTop: '40px' }}><Link to="/about">See More</Link></button>
+                    <button className="btn" id="home-skill-btn" style={{ marginTop: '40px' }}><Link to="/about">See More</Link></button>
                 </div>
             </div>
             <div className="home-page-project text-center">

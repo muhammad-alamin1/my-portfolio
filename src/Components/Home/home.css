@@ -60,18 +60,16 @@
 
 @media only screen and (max-width: 992px) {
   .home-right-side img {
-    width: 400px;
-    height: 300px;
-    transform: rotate(-5deg);
+    display: none;
   }
   .home-page-project {
-    height: 815px;
+    height: 530px;
+  }
+  .home-page-skill {
+    height: 640px;
   }
 }
 @media only screen and (max-width: 850px) {
-  .home-right-side img {
-    display: none;
-  }
   .home-left-side {
     text-align: center;
   }
@@ -87,7 +85,15 @@
 }
 @media only screen and (max-width: 600px) {
   .home-page-project {
-    height: 1370px;
+    height: 1070px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home-page-skill {
+    height: auto;
+  }
+  #home-skill-btn {
+    margin-bottom: 12px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -100,5 +106,9 @@
   }
   .about-btn {
     margin: 30px;
+  }
+  .home-left-side img {
+    width: 100%;
+    height: auto;
   }
 }
