@@ -1,6 +1,7 @@
 import React from 'react';
 import blogApp from '../../img/blog-app.png';
 import doctor from '../../img/life-care.png';
+import shop from '../../img/online-shop.png';
 import quizApp from '../../img/quiz-app.png';
 import ProjectCard from './../ProjectCard/ProjectCard';
 import './projects.css';
@@ -34,6 +35,15 @@ const projects = [
         clientGithub: 'https://github.com/muhammad-alamin1/doctor-portal-client',
         serverGithub: 'https://github.com/muhammad-alamin1/doctor-portal-server',
         live: 'https://dynamic-alpaca-3d47d4.netlify.app/'
+    },
+    {
+        id: 4,
+        projectName: 'BD Online Shop',
+        projectDescription: 'An e-commerce application',
+        img: shop,
+        clientGithub: 'https://github.com/muhammad-alamin1/bd-online-shop',
+        serverGithub: 'https://github.com/muhammad-alamin1/my-portfolio-server',
+        live: 'https://bd-online-shop-011b15.netlify.app/'
     },
 ]
 

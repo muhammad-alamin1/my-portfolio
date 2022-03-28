@@ -100,7 +100,7 @@ export default function Home() {
                         <div className="about-btn">
                             <button className="btn"><Link to="/about">About Me</Link></button>
                             <button className="btn">
-                                <a href="https://drive.google.com/file/d/1hn_DSMk2QgemtdrkhkrcPcmEbYXjLLLB/view?usp=sharing" target="_blank">Download Resume</a></button>
+                                <a href="https://drive.google.com/file/d/1-ofz0o-zILZEGIYl5PPaNRmk6LCnsK6W/view?usp=sharing" target="_blank">Download Resume</a></button>
                         </div>
                     </div>
                     <div className="col-sm-0 col-md-6 home-right-side">
