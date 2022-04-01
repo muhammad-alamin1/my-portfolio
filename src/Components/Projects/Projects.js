@@ -1,5 +1,6 @@
 import React from 'react';
 import blogApp from '../../img/blog-app.png';
+import bookShop from '../../img/book-shop.png';
 import doctor from '../../img/life-care.png';
 import shop from '../../img/online-shop.png';
 import quizApp from '../../img/quiz-app.png';
@@ -44,6 +45,15 @@ const projects = [
         clientGithub: 'https://github.com/muhammad-alamin1/bd-online-shop',
         serverGithub: 'https://github.com/muhammad-alamin1/my-portfolio-server',
         live: 'https://bd-online-shop-011b15.netlify.app/'
+    },
+    {
+        id: 5,
+        projectName: 'Book Shop',
+        projectDescription: 'Online E-commerce book shop',
+        img: bookShop,
+        clientGithub: 'https://github.com/muhammad-alamin1/book-shop-client',
+        serverGithub: 'https://github.com/muhammad-alamin1/book-shop-server',
+        live: 'https://book-shop2303.netlify.app/'
     },
 ]
 
